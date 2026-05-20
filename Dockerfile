@@ -1,8 +1,9 @@
 # Resmi PHP ve Apache imajını kullan
 FROM php:8.2-apache
 
-# MySQL bağlantısı için gerekli eklentileri kur
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+# PostgreSQL için gerekli sistem kütüphanelerini ve PHP eklentilerini kur
+RUN apt-get update && apt-get install -y libpq-dev \
+    && docker-php-ext-install pdo pdo_pgsql pgsql
 
 # Proje dosyalarını sunucuya kopyala
 COPY . /var/www/html/
