@@ -1,0 +1,413 @@
+body {
+  background-image: url(img/Win111.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: 'Courier Prime', monospace;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.sekme {
+  position: relative;
+  display: inline-block;
+}
+
+.sekme2 {
+  position: relative;
+  display: inline-block;
+}
+
+/* 1. Yazının Rengarenk Parlaması İçin Animasyon (Normal Durum) */
+@keyframes yaziParlamasi {
+  0% {
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000;
+  }
+
+  15% {
+    color: #ff7f00;
+    text-shadow: 0 0 10px #ff7f00;
+  }
+
+  30% {
+    color: #ffff00;
+    text-shadow: 0 0 10px #ffff00;
+  }
+
+  45% {
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+  }
+
+  60% {
+    color: #0000ff;
+    text-shadow: 0 0 10px #0000ff;
+  }
+
+  75% {
+    color: #4b0082;
+    text-shadow: 0 0 10px #4b0082;
+  }
+
+  90% {
+    color: #9400d3;
+    text-shadow: 0 0 10px #9400d3;
+  }
+
+  100% {
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000;
+  }
+}
+
+/* 2. Arka Planın Soldan Sağa Akması İçin Animasyon (Hover Durumu) */
+@keyframes arkaPlanAkmak {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+
+.sekme-tusu {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-shadow: 2px 2px 3px black;
+  border-radius: 10px;
+}
+
+.sekme-tusu2 {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-shadow: 2px 2px 3px black;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  /* Üstüne gelinmediğinde çalışacak yazı parlaması animasyonu */
+  animation: yaziParlamasi 4s linear infinite;
+}
+
+
+.sekme-tusu:hover {
+  background-color: dodgerblue;
+  transform: scale(1.05);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.sekme2:hover .sekme-tusu2 {
+  /* Yazı animasyonunu durdurup rengi sabitle ki renkli arka planda okunsun */
+  animation: none;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+
+  /* Gökkuşağı arka planını oluştur (Başı ve sonu aynı renk ki geçiş kusursuz dönsün) */
+  background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3, #ff0000);
+  background-size: 200% auto;
+
+  /* Arka planı soldan sağa kaydıran animasyon */
+  animation: arkaPlanAkmak 2s linear infinite;
+
+  transform: scale(1.05);
+  border-radius: 10px;
+}
+
+
+.sekme-icerik {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 152px;
+  z-index: 1;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+
+.sekme-icerik a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+}
+
+
+.sekme-icerik a:hover {
+  background-color: #f0f0f0;
+  transition: 0.3s;
+}
+
+
+.sekme:hover .sekme-icerik {
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sekme:hover .sekme-tusu {
+  background-color: dodgerblue;
+}
+
+main {
+  color: white;
+  padding-top: 150px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+ul:hover {
+  color: dodgerblue;
+  transition: 0.25s;
+}
+
+li:hover {
+  color: dodgerblue;
+  transition: 0.25s;
+}
+
+a:hover {
+  color: dodgerblue;
+  transition: 0.25s;
+}
+
+header {
+  position: fixed;
+  height: 5%;
+  width: 99.5%;
+  z-index: 1000;
+  margin-right: 0.5%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  column-gap: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.menu-button {
+  color: dodgerblue;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 56px;
+}
+
+.menu-button:hover {
+  background-color: dodgerblue;
+  color: white;
+  transition: 0.25s;
+  transform: scale(1.05);
+}
+
+.secim {
+  background-color: white;
+  text-align: center;
+  box-shadow: 0px 6px 20px darkgray;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 50rem;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+@media (max-width: 768px) {
+  .secim {
+    width: 85%;
+    /* İçerik ekranı tam kaplasın */
+    float: none;
+  }
+}
+
+.button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+.button:hover {
+  background-color: dodgerblue;
+  color: white;
+  transition: 0.25s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 50%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.resim-karti {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resim-karti img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.resim-karti:hover img {
+  transform: scale(1.1);
+}
+
+.hover-bilgi {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.resim-karti:hover .hover-bilgi {
+  opacity: 1;
+}
+
+.rezerv {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  width: 250px;
+}
+
+.rezerv:hover {
+  background-color: gray;
+  color: white;
+  transition: 0.25s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.don {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 85px;
+}
+
+.don:hover {
+  background-color: dodgerblue;
+  color: white;
+  transition: 0.25s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.magaza {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+}
+
+.magaza:hover {
+  background-color: gray;
+  color: white;
+  transition: 0.25s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.pop {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+section {
+  padding: 40px 5%;
+  background: rgba(255, 255, 255, 0);
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 250px;
+  background: black;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 60%;
+  height: auto;
+  border-radius: 4px;
+}

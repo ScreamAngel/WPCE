@@ -1,0 +1,124 @@
+/* Genel Ayarlar */
+body {
+    background: url('img/re93.jpg') no-repeat center center fixed; /* Görsel yolunun doğru olduğundan emin ol */
+    background-size: cover;
+    color: #f1f5f9;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+/* Ana Konteynır */
+.admin-table-wrapper {
+    background: rgba(30, 41, 59, 0.7); /* Şeffaf arka plan */
+    backdrop-filter: blur(12px); /* Cam efekti */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #38bdf8; /* Açık mavi tonu */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Tablo Tasarımı */
+.error-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px; /* Satırlar arası boşluk */
+}
+
+.error-table th {
+    text-align: left;
+    padding: 12px 16px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+.error-table tbody tr {
+    background: rgba(255, 255, 255, 0.03);
+    transition: all 0.2s ease;
+}
+
+.error-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.07);
+    transform: scale(1.005);
+}
+
+.error-table td {
+    padding: 16px;
+    vertical-align: middle;
+}
+
+/* Özel Hücre Stilleri */
+.code-cell code {
+    background: #0ea5e9;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.text-cell {
+    max-width: 300px;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+.category-badge {
+    background: rgba(56, 189, 248, 0.1);
+    color: #38bdf8;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.date-cell {
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+/* Butonlar */
+.edit-btn {
+    background: #334155;
+    color: #f8fafc;
+    border: 1px solid #475569;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.edit-btn:hover {
+    background: #0ea5e9;
+    border-color: #0ea5e9;
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.4);
+}
+
+.back-btn {
+    margin-top: 2rem;
+    background: transparent;
+    color: #94a3b8;
+    border: 1px solid #334155;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    color: #fff;
+    border-color: #64748b;
+    background: #1e293b;
+}

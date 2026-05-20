@@ -1,0 +1,137 @@
+/* Genel Gövde Ayarları */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('img/re92.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+
+}
+
+/* Tablo Konteynırı */
+.admin-table-wrapper {
+    background: rgba(0, 0, 0, 0.2); /* Yarı şeffaf siyah */
+    backdrop-filter: blur(10px); /* Arkayı bulanıklaştırma (Modern hava katar) */
+    border-radius: 15px;
+    padding: 30px;
+    margin: 50px auto;
+    max-width: 95%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Tablo Tasarımı */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.user-table thead tr {
+    border-bottom: 2px solid dodgerblue;
+}
+
+.user-table th {
+    padding: 15px;
+    text-align: left;
+    color: dodgerblue;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.user-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 15px;
+}
+
+/* Satır Üzerine Gelince */
+.user-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transition: 0.3s ease;
+}
+
+/* Şifre (Hash) Alanı İçin Özel Ayar */
+code {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    color: #aaa;
+    display: block;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Badge (Rozet) Tasarımları */
+.badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.badge-admin { background: rgba(30, 144, 255, 0.2); color: #1e90ff; border: 1px solid #1e90ff; }
+.badge-user { background: rgba(153, 153, 153, 0.2); color: #ccc; border: 1px solid #999; }
+.badge-success { background: rgba(40, 167, 69, 0.2); color: #28a745; border: 1px solid #28a745; }
+.badge-danger { background: rgba(220, 53, 69, 0.2); color: #dc3545; border: 1px solid #dc3545; }
+
+.ilet2{
+            background: #89b4fa;
+            color: #1e1e2e;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.ilet2:hover{
+    background-color: dodgerblue;
+    color: white;
+    transform: scale(1.05);
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+/*
+.ilet2 {
+    background: dodgerblue;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    
+}
+
+.ilet2:hover {
+    background: #187bcd;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 144, 255, 0.4);
+}
+    */
+

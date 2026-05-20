@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: url(img/Win112.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.msg{
+    color: red;
+    font-size: 18px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form form{
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 6px 20px darkgray;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 28rem;
+}
+
+.form form h2{
+    margin-bottom: 1.5rem;
+}
+
+.form form input{
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+
+}
+
+.form form select{
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.form form button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 0.75rem;
+    background-color: black;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.form form button:hover{
+    background-color: dodgerblue;
+    color: white;
+    transition: 0.25s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.form form p{
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.msg {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.audio{
+    height: 25px;
+    width: 300px;
+}

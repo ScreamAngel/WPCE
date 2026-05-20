@@ -1,0 +1,217 @@
+body{
+  font-family: arial, sans-serif;
+  background-image: url(img/Win111.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.sekme {
+  position: relative;
+  display: inline-block;
+}
+
+
+.sekme-tusu {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-shadow: 2px 2px 3px black;
+  border-radius: 10px;
+}
+
+
+.sekme-tusu:hover {
+  background-color: dodgerblue;
+  transition:0.3s;
+  border-radius: 10px;
+}
+
+
+.sekme-icerik {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 152px;
+  z-index: 1;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+
+.sekme-icerik a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+}
+
+
+.sekme-icerik a:hover {
+  background-color: #f0f0f0;
+  transition: 0.3s;
+}
+
+
+.sekme:hover .sekme-icerik {
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sekme:hover .sekme-tusu {
+  background-color: dodgerblue;
+    color: white;
+  transition: 0.25s;
+  transform: scale(1.05);
+}
+
+main{
+  color: white;
+  padding-top: 150px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+ul:hover{
+  color: dodgerblue;
+  transition: 0.25s;
+}
+
+li:hover{
+  color: dodgerblue;
+  transition: 0.25s;
+}
+
+a:hover{
+  color: dodgerblue;
+  transition: 0.25s;
+}
+
+header{
+  height: 100%;
+  border-bottom: 2px solid #ffffff06;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  column-gap: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  text-decoration: none;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.menu-button{
+  color: dodgerblue;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 56px;
+}
+
+.menu-button:hover{
+  background-color: dodgerblue;
+  color: white;
+  transition: 0.25s;
+}
+
+input{
+  margin: 10px;
+  padding: 5px 3px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.rezervasyon{
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 472px;
+  margin-left: 38%;
+  margin-top: 3%;
+  border-radius: 10px;
+}
+
+select{
+  margin: 10px;
+  padding: 5px 3px;
+  width: 208px;
+  border-radius: 10px;
+}
+
+.bitir{
+  margin: 10px;
+  padding: 5px 3px;
+  width: 200px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;;
+}
+
+.bitir:hover{
+  background-color: dodgerblue;
+  color: white;
+  transform: scale(1.05);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.iletisim{
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 400px;
+  height: 500px;
+  margin-left: 40%;
+  border-radius: 10px;
+  margin-top: 150px;
+}
+
+.ilet{
+  margin: 10px;
+  padding: 5px 3px;
+  width: 215px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.ilet:hover{
+  background-color: dodgerblue;
+  color: white;
+  transform: scale(1.05);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+textarea{
+  border-radius: 10px;
+}

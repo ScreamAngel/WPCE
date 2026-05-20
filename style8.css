@@ -1,0 +1,129 @@
+body{
+    background-image: url(img/A14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;             /* Merkeze almak için */
+    justify-content: center;   /* Yatayda orta */
+    align-items: center;       /* Dikeyde orta */
+    min-height: 100vh;         /* Tüm ekran yüksekliği */
+    margin: 0;
+}
+
+.profile-card {
+    background: rgba(30, 41, 59, 0.7); /* Koyu tema */
+    backdrop-filter: blur(2px);
+    color: #cdd6f4;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #89b4fa; /* Mavi vurgu */
+    margin-bottom: 1rem;
+}
+
+.image-container img:hover{
+    transform:scale(1.1);
+    transition:0.25s;
+}
+
+#fileInput { display: none; } /* Standart düğmeyi gizle */
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 8px 20px;
+    cursor: pointer;
+    background: #313244;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.custom-file-upload:hover{
+  background-color: dodgerblue;
+  color: white;
+  transition: 0.25s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.save-btn {
+    background: #89b4fa;
+    color: #1e1e2e;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+}
+
+.save-btn:hover{
+  background-color: dodgerblue;
+  color: white;
+  transition: 0.25s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Bildirim Konteynırı */
+.toast {
+    visibility: hidden; /* Varsayılan olarak gizli */
+    min-width: 250px;
+    background-color: #1e1e2e; /* Koyu tema rengin */
+    color: #89b4fa; /* Vurgu mavi */
+    text-align: center;
+    border: 1px solid #89b4fa;
+    border-radius: 12px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1000;
+    right: 30px;
+    top: 30px;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Gösterme Sınıfı */
+.toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Giriş ve Çıkış Animasyonları */
+@keyframes fadein {
+    from { top: 0; opacity: 0; }
+    to { top: 30px; opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { top: 30px; opacity: 1; }
+    to { top: 0; opacity: 0; }
+}
+
+.duzenle{
+    background-color: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(4px); /* Cam efekti */
+    opacity: 87%;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    
+    padding: 2rem;
+    margin-top: 19%;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
